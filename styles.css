@@ -517,8 +517,50 @@ footer li{
   background:black;
   color: white;
 }
-.fab:hover{
-  opacity: 0.7%;
+#Experimenting with social media icons
+.fab{
+ display: inline-flex;
+  text-decoration: none;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 8px;
+}
+.fab a::before{
+ content: "";
+ position: absolute;
+ width: 60px;
+ height: 60px;
+ background: linear-gradient(45deg,#22a6b3,#30336b);
+ border-radius: 50%;
+ z-index: -1;
+ transition: 0.3s ease-in;
+}
+.fab a:hover::before{
+  transform: scale(0);
+}
+
+.fab a i{
+  transition: 0.3s ease-in;
+}
+
+.fab a:hover i{
+  background: linear-gradient(45deg,#22a6b3,#30336b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+}
+
+
+
+
+
+/*.fab:hover{
+  opacity: 0.7%;*/
 }
 .fas:hover{
   opacity: 0.7%;
