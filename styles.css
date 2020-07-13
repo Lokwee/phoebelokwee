@@ -10272,3 +10272,7 @@ header.masthead h1 {
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
 }
+#about-text {
+ color: rgba(255, 255, 255, 0.75);
+ line-height: 2;
+}
