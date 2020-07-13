@@ -16,20 +16,6 @@
 
 
 
-
- 
-
-
-
-
-
-
- /*
- This is the original code, above this, I experiment with stuff
- */
- /* 
- Remeber you changed primary and orange
- */
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10280,3 +10266,8 @@ header.masthead h1 {
  font-weight: 300 !important;
  margin-bottom: 3rem !important;
 }
+#me-img{
+ display: inline-block;
+ margin: 25px 10px; 
+}
+
