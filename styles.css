@@ -10275,4 +10275,8 @@ header.masthead h1 {
 #about-text {
  color: rgba(255, 255, 255, 0.75);
  line-height: 2;
+ padding-left: 10px;
+ font-size: 3.5;
+ font-weight: 300 !important;
+ margin-bottom: 3rem !important;
 }
