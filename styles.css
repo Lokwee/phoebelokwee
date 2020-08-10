@@ -16,6 +16,20 @@
 
 
 
+
+ 
+
+
+
+
+
+
+ /*
+ This is the original code, above this, I experiment with stuff
+ */
+ /* 
+ Remeber you changed primary and orange
+ */
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -48,10 +62,10 @@
 }
 
 *,
-*::before,
+/* *::before,
 *::after {
   box-sizing: border-box;
-}
+} */
 
 
 html {
@@ -491,66 +505,49 @@ footer li{
   padding: 20px 20px;
   border: 1px solid #fff;
   border-radius: 50%;
-  transition: 5s;
+  transition: 0.5s;
   
 }
-.fa-facebook{
+/* .fa-facebook{
   background: #3b5998;
   color: white;
+} */
+.social-icons::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  background: burlywood;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  z-index: -1;
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+.social-icons:before{
+  filter: blur(3px);
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #d35400;
+}
+.icons{
+  text-align: center;
+
 }
 
-.fa-envelope-open-text{
+.social-icons:hover{
+  color: #ffa502;
+  box-shadow: 0 0 15px #d35400;
+  text-shadow: 0 0 15px #d35400;
+
+}
+
+
+/* .fa-envelope-open-text{
   background:black;
   color: white;
-}
-#Experimenting with social media icons
-.fab{
- display: inline-flex;
-  text-decoration: none;
-  font-size: 18px;
-  width: 60px;
-  height: 60px;
-  color: #fff;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  margin: 0 8px;
-}
-.fab a::before{
- content: "";
- position: absolute;
- width: 60px;
- height: 60px;
- background: linear-gradient(45deg,#22a6b3,#30336b);
- border-radius: 50%;
- z-index: -1;
- transition: 0.3s ease-in;
-}
-.fab a:hover::before{
-  transform: scale(0);
-}
+} */
 
-.fab a i{
-  transition: 0.3s ease-in;
-}
-
-.fab a:hover i{
-  background: linear-gradient(45deg,#22a6b3,#30336b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transform: scale(2.2);
-}
-
-
-
-
-
-/*.fab:hover{
-  opacity: 0.7%;*/
-}
-.fas:hover{
-  opacity: 0.7%;
-}
 
 .img-fluid {
   max-width: 100%;
@@ -10175,7 +10172,7 @@ hr.light {
 header.more{
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
   background-position: left;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -10190,7 +10187,7 @@ header.more p{
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10258,16 +10255,14 @@ header.masthead h1 {
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
 }
-#about-text {
- color: rgba(255, 255, 255, 0.75);
- line-height: 2.5;
- padding-left: 10px;
- font-size: 3.5;
- font-weight: 300 !important;
- margin-bottom: 3rem !important;
-}
-#me-img{
- display: inline-block;
- margin: 25px 25px; 
-}
 
+#about-text {
+  /*color: #fff !important;*/
+  color: rgba(255, 255, 255, 0.75);
+  /*text-align: right;*/
+  padding-left: 0 px;
+  line-height: 2;
+  font-size: 3.5;
+  font-weight: 300 !important;
+  margin-bottom: 3rem !important;
+}
