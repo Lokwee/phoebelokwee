@@ -10298,7 +10298,10 @@ header.masthead h1 {
   margin-bottom: 20px;
   width: 100%;
   max-width: 80%;
-  margin-right: auto;
-  
+  margin-right: auto;  
+}
+.images{
+  display: flex;
+  justify-content: center;
 }
 
