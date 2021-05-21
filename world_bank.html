@@ -47,10 +47,12 @@
                   <div class="col-lg-8 align-self-baseline">
                       <img  src = "/stocks.jpg" style = "width: 400px; height: 200px;" position = "relative" id = "me-img">
                       <p id = "about-text">
-                        In this project, I wanted to visualize some of the healthcare data available on world bank  databank. I looked at maternal mortality, infant mortality, life expectancy, death rate (mortality rate), government expenditure in healthcare, and adult obesity.
+                        In this project, I wanted to visualize some of the healthcare data available on World Bank  open data. Some of the factors I looked at include maternal mortality, infant mortality, life expectancy, death rate (mortality rate), government expenditure in healthcare, and adult obesity.
+
+                        I used world bank api (wbdata) to acquire the desired data following the indicators dictionary linked <a href = "https://databank.worldbank.org/metadataglossary/all/series">here</a>
                       </p>
-                      <img class = "project-image1" src="/JPMreturns.png" alt="">
-                      <p id = "about-text">I use pandas and numpy to calculate basic statistical data such as correlation, and percent change overtime. I use seaborn to create visualizations, for example the plot on the left represents JP Morgan's change in returns overtime.</p>
+                      <img class = "project-image1" src="/data.png" alt="">
+                      <p id = "about-text">After acquiring the data, I used pandas to read it in form of a dataframe and perform simple data cleaning. Finally, I use Matplotlip, Seaborn and Plotly libraries to create some visualizations.</p> 
                       <img class = "project-image2" src="/Blackrock.png" width = "400px" alt="">
                       <p id = "about-text">The plot on the right represents Blackrock's 30 day average as compared to it's closing price over this time period.</p>
 
