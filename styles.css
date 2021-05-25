@@ -10167,7 +10167,8 @@ header.more p{
 header.mywork{
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: url("brown.jpg") !important;
+  background-color: #C7AD97;
+  /* background: url("brown.jpg") !important; */
   background-position: left;
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
