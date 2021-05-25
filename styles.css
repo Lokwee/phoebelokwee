@@ -10167,7 +10167,7 @@ header.more p{
 header.mywork{
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background-color: #C7AD97;
+  background-color: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%);
   /* background: url("brown.jpg") !important; */
   background-position: left;
   background-repeat: no-repeat !important;
